@@ -115,7 +115,7 @@ const mongoParams = {
 
 const PORT = process.env.PORT || 3000;
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout', mongoParams)
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://prashants1704:eDrHSpcgGKPLcCJM@cluster0.lld62qj.mongodb.net/', mongoParams)
   .then(() => {
     app.listen(PORT, () => {
       console.log(`==> 🌎  Listening on port ${PORT}. Visit http://localhost:${PORT} in your browser.`);
